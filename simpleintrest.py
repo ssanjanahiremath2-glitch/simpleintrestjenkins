@@ -1,9 +1,12 @@
+
+import sys 
+
 def simple_intrest(principal, intrest, time):
-    return (principal *intrest*time)/100
+    return (principal * intrest * time) / 100
 
-if__name___ == "__main__":
-    p=int(input("enter principal amt"))
-    i=float(input("enter intrest"))
-    t=int(input("enter time in months"))
+if __name__ == "__main__":
+    p = int(sys.argv[1])
+    i = float(sys.argv[2])
+    t = int(sys.argv[3])
 
-print("simple intrest is :",simple_intrest(p,i,t))
+    print("Simple interest is:", simple_intrest(p, i, t))
